@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lamp</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Add a touch of unique, abstract, modern and playful lighting to your home or office interior with our stylish set of lamps. Our products combine functionality with a sleek, modern design. Our lamps are ideal for adding a splash of colour to your favourite home or office areas. They create a warm, ambient aesthetic that differs from a ceiling light or floor lamp. For inspiration on how to keep your home décor on-trend, please visit our website and if you have any quiestions don't hesitate and contact us.">
+    <meta name="author" content="Patriciq Dragneva">
+
+    <!-- Logo 16x16px -->
+    <link rel="icon" href="./img/image-logo-1.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-md fixed-top ">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars fa-lg navbar-toggler-icon" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+
+                <button class="btn btn-green-color"><a class="nav-link news-section" href="shopnow.html">Shop now!</a></button>
+                <a class="nav-link news-section" href="news.html">News</a>
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="aboutus.html">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contactus.html">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled logged-in" href="#">Welcome back, <span class="username-placeholder">user</span>!</a>
+                    </li>
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button id="search-btn" class="btn btn-green-color" type="submit">             
+                        <span class="not-logged-in">
+                            <a href="#login" data-toggle="modal" data-target="#login-modal">Log in</a>
+                        </span>
+                        <span class="logged-in">
+                            <a href="#logout" class="logout-btn">Log out</a>
+                        </span>
+                    </button>
+                </form>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <div id="login-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm" role="document">
+            <form name="loginForm" class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Log in</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Username</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-user"></span>
+                            </span>
+                            <input type="text" name="username" class="form-control" placeholder="Username" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-star"></span>
+                            </span>
+                            <input type="password" name="password" class="form-control" placeholder="Password" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-green-color" data-dismiss="modal">
+                        <span class="glyphicon glyphicon-arrow-left"></span>
+                        Close
+                    </button>
+                    <button type="submit" class="btn btn-green-color">
+                        <span class="glyphicon glyphicon-lock"></span>
+                        Login
+                    </button>
+                </div>
+            </form>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+
+
+    <div id="container-with-nav-info" class="container container-with-nav-info d-flex align-items-center">
+        <div id="accordion" class="navigation-divs" role="tablist" aria-multiselectable="true">
+            <div class="card">
+                <div class="card-header" role="tab" id="headingOne">
+                    <h5 class="mb-0">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            RECENT NEWS
+                        </a>
+                    </h5>
+                </div>
+                <div id="news-container"></div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <a href="#top"><i class="fa fa-lg fa-3x fa-chevron-up"></i></a>
+
+    <footer class="jumbotron jumbo-footer">
+        <div class="container_footer">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://dribbble.com/" target="_blank"><i class="fa fa-dribbble"></i></a>
+            <a href="https://www.behance.net/" target="_blank"><i class="fa fa-behance"></i></a>
+            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a>
+        </div>
+        <p id="p_footer">Copyright &copy; 2017 Lamp</p>
+    </footer>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script src="./js/js.cookie.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
