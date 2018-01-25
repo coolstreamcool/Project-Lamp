@@ -56,6 +56,8 @@
             </div>
         </nav>
     </header>
+    
+    
 
     <div id="login-modal" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-sm" role="document">
@@ -100,6 +102,8 @@
         <!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
+    
+    
 
     <main role="main" class="container d-flex justify-content-center">
         <div id="mainContainer" class="container-fluid logo-container">
@@ -107,14 +111,11 @@
         </div>
 
     </main>
-    <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_icon=""></a>
+    <a data-scroll href="#timelineDiv" class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_icon=""></a>
 
 
 
-
-
-
-    <div class="timeline-div">
+    <div id="timelineDiv" class="timeline-div">
         <div class=" container">
             <ul id="container-for-timeline-data" class="container">
             </ul>
@@ -146,6 +147,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     <script src="./js/js.cookie.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/timeline.js"></script>
+    <script src="smooth-scroll-master/dist/js/smooth-scroll.js"></script>
+    <script> var scroll = new SmoothScroll('a[href*="#"]');</script>
 </body>
 
 </html>
